@@ -1,0 +1,23 @@
+name: TacoAC
+version: '1.4.1'
+main: ac.anticheat.taco.TacoAC
+api-version: '1.16'
+author: Rukzell
+depend: [packetevents]
+
+commands:
+  taco:
+    description: Команда TacoAC
+    usage: /taco help
+    permission: taco.commands
+
+permissions:
+  taco.alerts:
+    description: Показывает алерты в чате.
+    default: op
+  taco.reload:
+    description: Перезагружает конфиг TacoAC.
+    default: op
+  taco.checks:
+    description: Показывает включённые чеки.
+    default: op

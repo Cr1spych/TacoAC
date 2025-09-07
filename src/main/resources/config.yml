@@ -1,0 +1,113 @@
+# настраивайте конфигурацию на тестовом сервере
+
+anticheat:
+  prefix: '#ffc84aTacoAC§7§l'
+
+animation:
+  enabled: true
+  particle_count: 80
+  duration_ticks: 3
+  speed: 0.5
+  particle: "FLAME"
+  sound: "ENTITY_DRAGON_FIREBALL_EXPLODE"
+
+alerts:
+  # доступные плейсхолдеры:
+  # {prefix}
+  # {player}
+  # {check}
+  # {violations}
+  # {verbose}
+  message: "{prefix} #ffebba{player} #ffc84aпровалил #ffebba{check} #ffebbax#ffc84a{violations} §7({verbose})"
+  log-in-console: true
+  enable-alerts-on-join: true
+
+checks:
+  AimA:
+    max-violations: 5
+    remove-violations-after: 60 # в секундах
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  AimB:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  AimC:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  # а почему бы и нет
+  ElytraA:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  # воркает
+  MultiActionsA:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  # тоже воркает
+  InventoryA:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  InventoryB:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  InventoryC:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+  # не проверена временем
+  KillAuraA:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+    hitbox-expand: 0.55 # увеличение хитбокса игрока для проверки
+    wallhit-threshold: 0.99
+
+  # вроде ворк
+  SprintA:
+    max-violations: 5
+    remove-violations-after: 60
+    decay: 1
+    enabled: true
+    alert: true
+    punish-command: 'kick {player} #ff7b42Нечестное преимущество'
+
+config-ver: 1.2
